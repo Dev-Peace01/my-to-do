@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TO-DO App</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="task-input">
+            <!-- <img src="img/bars-solid (1).svg" alt="bar-icon" width="10px"> -->
+            <input type="text" id="tasks" placeholder="Add a new task.......">
+        </div>
+
+        <div class="task-activities" >
+            <div class="task-control">
+                <span id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+           
+            <button class="clear-btn">Clear All</button>  
+        </div>
+
+        <ul class="task-box">
+            <li class="task">
+                <label for="1">
+                    <input type="checkbox" id="1">
+                    <p>Working out</p>
+                </label>
+                <div class="settings">
+                    <img src="img/ellipsis-solid.svg" alt="ellipsis-solid" width="10px">
+                    <ul class="settings-menu">
+                        <li><img src="img/pen-solid.svg" alt="pen" width="12px" id="pen">Edit</li>
+                        <li><img src="img/trash-solid.svg" alt="Delete" width="10px">Delete</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="task">
+                <label for="2">
+                    <input type="checkbox" id="2">
+                    <p>Join a meeting</p>
+                </label>
+                <div class="settings">
+                    <img src="img/ellipsis-solid.svg" alt="ellipsis-solid" width="10px">
+                    <ul class="settings-menu">
+                        <li><img src="img/pen-solid.svg" alt="pen" width="12px" id="pen">Edit</li>
+                        <li><img src="img/trash-solid.svg" alt="Delete" width="10px">Delete</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="task">
+                <label for="3">
+                    <input type="checkbox" id="3">
+                    <p>Go to shop</p>
+                </label>
+                <div class="settings">
+                    <img src="img/ellipsis-solid.svg" alt="ellipsis-solid" width="10px">
+                    <ul class="settings-menu">
+                        <li><img src="img/pen-solid.svg" alt="pen" width="12px" id="pen">Edit</li>
+                        <li><img src="img/trash-solid.svg" alt="Delete" width="10px">Delete</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="task">
+                <label for="4">
+                    <input type="checkbox" id="4">
+                    <p>Read a book</p>
+                </label>
+                <div class="settings">
+                    <img src="img/ellipsis-solid.svg" alt="ellipsis-solid" width="10px">
+                    <ul class="settings-menu">
+                        <li><img src="img/pen-solid.svg" alt="pen" width="12px" id="pen">Edit</li>
+                        <li><img src="img/trash-solid.svg" alt="Delete" width="10px">Delete</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="tasl-list-wrapper">
+            <ul class="task-list"></ul>
+        </div>
+    </div>
+<script src="script"></script>
+</body>
+</html>

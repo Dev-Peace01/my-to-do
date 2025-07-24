@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none; 
+    box-sizing: border-box;
+    outline-style: none;
+    font-family: '', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: blue;
+    overflow: hidden;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wrapper{
+    background: white;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 80vh;
+    width: 20%;
+    border: 5px solid #000;
+    border-radius: 30px;
+    }
+
+.task-input{
+    height: 2.5em;
+    padding: 0 25px;
+    margin-top: 20px;
+    /* this was because of the icon added here earlier but it has been removed */
+    /* position: relative; */
+}
+
+/* .task-input img{
+    position: absolute; 
+    left: 10px; 
+    top: 35%;
+    transform: translate(17px );
+} */
+
+.task-input input{
+   height: 100%;
+   width: 100%;
+   outline: none;
+   padding: 0 20px;
+   border-radius: 7px;
+   border: 1px solid #999;
+}
+
+.task-activities, li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-activities {
+   padding: 10px 20px;
+   border-bottom: 1px solid;
+   border-color: #999;
+}
+
+.task-control span:hover {
+    color: blue;
+}
+
+   
+
+
+.task-control span{
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.task-control span:first-child{
+    margin: 0;
+}
+
+.task-activities .clear-btn{
+    outline: none;
+    background-color: blue;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.task-box{
+    margin: 20px 25px;
+}
+.task-box .task{
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.task-box .task:last-child{
+   margin-bottom: 0;
+   padding-bottom: 0;
+   border-bottom: 0;
+}
+
+.task label{
+    display: flex;
+}
+
+.task label input{
+    margin-right: 10px;
+}
+
+.task .settings{
+    cursor: pointer;
+    position: relative;
+}
+
+.settings .settings-menu{
+    padding: 5px 0;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    position: absolute;
+    z-index: 2;
+    right: -5px;
+    transform: scale(0);
+    transition: transform 0.2 ease;
+    bottom: -18px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.settings:hover .settings-menu{
+    transform: scale(1);
+}
+
+.settings-menu li{
+height: 15px;
+padding: 5px 5px;
+margin-bottom: 2px;
+font-size: 12px;
+justify-content: flex-start;
+}
+
+.settings .settings-menu li:hover{
+    background-color: #999;
+}
+
+.settings .settings-menu li:first-child{
+    margin-top: 0;
+} 
+
+.settings .settings-menu li:last-child{
+    margin-bottom: 0;
+}
+
+.settings-menu li img{
+    padding-right: 3px;
+}
+
+
+
+
+
+@media (max-width: 765px) {
+    .wrapper{
+        width: 80%;
+        border-radius: 20px;
+        border: 2px solid #000;
+    }
+
+    .task-control{
+    font-size: 12px;
+}
+}
